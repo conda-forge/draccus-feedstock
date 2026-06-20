@@ -1,6 +1,6 @@
 context:
   name: draccus
-  version: "0.11.5"
+  version: "0.11.6"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: b82e2c2027030ae1a0f105515125f914e050c0766ab518df3a0560a07d10ddc9
+  sha256: d134f576a1f4febd93c6b200df7f92e5febffe9efdc0a5f381bf50c2e0568a39
 
 build:
   script: python -m pip install . -vv
